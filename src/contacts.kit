@@ -9,56 +9,157 @@
 </head>
 
 <body>
-
-    <header>
-        <h1>Logótipo / Nome do Grupo</h1>
-        <!-- @import "header" -->
-    </header>
-
+ <!-- @import "header" -->
     <main>
-        <section>
-            <h2>Fala connosco</h2>
-            <p>Tens alguma dúvida ou queres colaborar connosco nos nossos projetos? Usa o formulário abaixo ou as nossas
-                redes sociais.</p>
+    <section class="contact-hero">
+        <div class="contact-hero-texto">
+            <span class="etiqueta">GET IN TOUCH</span>
+            <h1>Let's Start a <em>Conversation</em></h1>
+            <p>Have a project in mind or just want to chat? We are always open to discussing new opportunities, creative ideas, or potential collaborations.</p>
+        </div>
+    </section>
+<section class="contact-form-section">
+            <div class="contact-container">
+                
+                <div class="message-column">
+                    <h3>Send a Message</h3>
+                    <form action="#" class="main-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="João Gonçalo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="joaoegoncalo@gmail.com" required>
+                        </div>
 
-            <form action="#" method="post">
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="user_name" required>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="project">New Project</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell us about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Send Message <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
 
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="user_email" required>
+                <div class="info-column">
+                    <div class="info-block">
+                        <h3>Contact Information</h3>
+                        <div class="info-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p>goncaloejoao@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <p>+351 956677201</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Lisboa, PT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability-block">
+                        <h3>Availability</h3>
+                        <ul>
+                            <li><i class="fa-regular fa-clock"></i> Response Time: <strong>Within 24 hours</strong></li>
+                            <li><i class="fa-regular fa-calendar-check"></i> Availability: <strong>Open to opportunities</strong></li>
+                            <li><i class="fa-regular fa-comments"></i> Preferred Contact: <strong>Email</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="social-block">
+                        <h3>Connect on Social</h3>
+                        <div class="social-mini-grid">
+                            <a href="https://github.com/goncalogsa-lgtm/goncalo-joao" class="social-mini-card">
+                                <i class="fa-brands fa-github"></i>
+                                <div>
+                                    <span>GitHub</span>
+                                    <p>@goncaloejoao</p>
+                                </div>
+                                <span class="mini-seta">↗</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gon%C3%A7alo-almeida-439967225/" class="social-mini-card">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <div>
+                                    <span>LinkedIn</span>
+                                    <p>Gonçalo&Joao</p>
+                                </div>
+                                <span class="mini-seta">↗</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="user_message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </section>
-
-        <section>
-            <h3>Outras formas de contacto</h3>
-            <address>
-                <p>Faculdade de Belas-Artes da Universidade de Lisboa</p>
-                <p>Largo da Academia Nacional de Belas Artes, 1249-058 Lisboa</p>
-                <p>Email: <a href="mailto:grupo@fbaul.edu.pt">grupo@fbaul.edu.pt</a></p>
-            </address>
-
-            <div class="redes-sociais">
-                <h4>Segue-nos</h4>
-                <ul>
-                    <li><a href="https://www.instagram.com/fbaul/" target="_blank" rel="noopener">Instagram</a></li>
-                    <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub do Projeto</a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
-                </ul>
             </div>
         </section>
-    </main>
+
+        <section class="faq-section">
+            <div class="section-header">
+                <span class="etiqueta">COMMON QUESTIONS</span>
+                <h2>Frequently Asked</h2>
+            </div>
+
+            <div class="faq-list">
+                
+                <article class="faq-item">
+                    <h3>What's your typical response time?</h3>
+                    <p>We aim to respond to all inquiries within 24 hours during business days. For urgent matters, feel free to mention that in your message.</p>
+                </article>
+
+                <article class="faq-item">
+                    <h3>Do you work on freelance projects?</h3>
+                    <p>Yes! We are open to freelance opportunities that align with my expertise and schedule. Let's discuss your project requirements.</p>
+                </article>
+
+                <article class="faq-item">
+                    <h3>What's your availability for new projects?</h3>
+                    <p>We are currently available for select projects. Our schedule varies, so reach out and we can discuss timing and scope.</p>
+                </article>
+
+                <article class="faq-item">
+                    <h3>Do you offer consultations?</h3>
+                    <p>Absolutely! We offer initial consultations to discuss project requirements, technical approaches, and how I can help achieve your goals.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2>Ready to Work Together?</h2>
+                <p>Whether you have a detailed project plan or just an idea you'd like to explore, We'd love to hear from you. Let's create something amazing together.</p>
+                
+                <div class="botoes-cta">
+                    <a href="mailto:your.email@example.com" class="btn-branco">Email Us Directly</a>
+                    <a href="#" class="btn-contorno">Schedule a Call</a>
+                </div>
+            </div>
+        </section>
+
+</main>
 
     <!-- @import "footer" -->
 

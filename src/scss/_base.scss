@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-escuro);
+  color: var(--texto-branco);
+  font-family: var(--fonte);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
