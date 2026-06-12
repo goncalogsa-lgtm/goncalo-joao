@@ -803,6 +803,15 @@ blockquote {
   }
 }
 
+.message-column {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 0 0 1.1rem;
+  }
+}
+
 .main-form {
   display: flex;
   flex-direction: column;
